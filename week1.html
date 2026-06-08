@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            line-height:1.6;
+        }
+
+        header, footer{
+            background-color:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 10px;
+        }
+
+        main{
+            display:flex;
+            gap:20px;
+            padding:20px;
+        }
+
+        section{
+            flex:3;
+        }
+
+        aside{
+            flex:1;
+            background:#f4f4f4;
+            padding:15px;
+            border-radius:8px;
+        }
+
+        article{
+            margin-bottom:20px;
+            padding:15px;
+            border:1px solid #ddd;
+            border-radius:8px;
+        }
+
+        .group-container{
+            display:flex;
+            gap:20px;
+            margin:20px 0;
+        }
+
+        .box{
+            background:#e8f4ff;
+            padding:15px;
+            border-radius:8px;
+            flex:1;
+            text-align:center;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin:20px 0;
+        }
+
+        table, th, td{
+            border:1px solid black;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+        form{
+            margin-top:20px;
+        }
+
+        form input,
+        form textarea{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            background:#333;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            cursor:pointer;
+        }
+
+        iframe{
+            margin-top:20px;
+            width:100%;
+            height:400px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Project Folder Structure
+    Portfolio_Project/
+    │
+    ├── index.html
+    ├── css/
+    │   └── style.css
+    ├── images/
+    ├── videos/
+    └── assets/
+    -->
+
+    <header>
+        <h1>John Doe Portfolio</h1>
+        <p>Web Developer | Designer | Student</p>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+            <article>
+                <h2>About Me</h2>
+                <p>
+                    Hello! I am John Doe, a passionate web developer with
+                    experience in HTML, CSS, JavaScript and modern web
+                    technologies.
+                </p>
+            </article>
+
+            <article>
+                <h2>My Projects</h2>
+                <p>
+                    Developed responsive websites, portfolio pages,
+                    and management systems using front-end technologies.
+                </p>
+            </article>
+
+            <!-- Grouping Multiple Tags Using DIV -->
+            <div class="group-container">
+
+                <div class="box">
+                    <h3>HTML</h3>
+                    <p>Semantic Web Pages</p>
+                </div>
+
+                <div class="box">
+                    <h3>CSS</h3>
+                    <p>Responsive Designs</p>
+                </div>
+
+                <div class="box">
+                    <h3>JavaScript</h3>
+                    <p>Interactive Features</p>
+                </div>
+
+            </div>
+
+            <!-- Table -->
+            <h2>Academic Details</h2>
+
+            <table>
+
+                <caption>
+                    Student Academic Record
+                </caption>
+
+                <tr>
+                    <th colspan="3">Education Details</th>
+                    <th>Grade</th>
+                </tr>
+
+                <tr>
+                    <th>Year</th>
+                    <th>Course</th>
+                    <th>Institute</th>
+                    <th>Percentage</th>
+                </tr>
+
+                <tr>
+                    <td>2020</td>
+                    <td>High School</td>
+                    <td>ABC School</td>
+                    <td>85%</td>
+                </tr>
+
+                <tr>
+                    <td>2021</td>
+                    <td>Intermediate</td>
+                    <td>XYZ School</td>
+                    <td>88%</td>
+                </tr>
+
+                <tr>
+                    <td>2022</td>
+                    <td>BCA Sem 1</td>
+                    <td>ABC University</td>
+                    <td>82%</td>
+                </tr>
+
+                <tr>
+                    <td>2023</td>
+                    <td>BCA Sem 2</td>
+                    <td>ABC University</td>
+                    <td>84%</td>
+                </tr>
+
+                <tr>
+                    <td>2024</td>
+                    <td>BCA Sem 3</td>
+                    <td>ABC University</td>
+                    <td>86%</td>
+                </tr>
+
+            </table>
+
+            <!-- Contact Form -->
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number">
+
+                <label>Subject</label>
+                <input type="text" placeholder="Enter subject">
+
+                <label>Message</label>
+                <textarea rows="5" placeholder="Write your message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <!-- Iframe Video -->
+            <h2>Introduction Video</h2>
+
+            <iframe
+                src="https://www.youtube.com/embed/UB1O30fR-EE"
+                title="Portfolio Video"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+        <aside>
+            <h3>Quick Information</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@email.com</p>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Location:</strong> India</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 John Doe Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
