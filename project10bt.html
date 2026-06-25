@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>StatusHub</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f5f6fa;
+}
+
+.header{
+    background:#0d6efd;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+.card{
+    border:none;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.status-up{
+    color:green;
+    font-weight:bold;
+}
+
+.status-down{
+    color:red;
+    font-weight:bold;
+}
+
+.status-warning{
+    color:orange;
+    font-weight:bold;
+}
+
+.incident{
+    border-left:5px solid #dc3545;
+    padding:10px;
+    margin-bottom:10px;
+    background:white;
+}
+
+.maintenance{
+    border-left:5px solid #ffc107;
+    padding:10px;
+    background:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>StatusHub</h1>
+
+<p>System Status Monitoring Page</p>
+
+</div>
+
+<div class="container mt-4">
+
+<div class="alert alert-success text-center">
+
+All Systems Operational
+
+</div>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card p-3">
+
+<h5>Authentication Service</h5>
+
+<p class="status-up">
+Operational
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-3">
+
+<h5>Payment Gateway</h5>
+
+<p class="status-warning">
+Degraded Performance
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-3">
+
+<h5>Email Service</h5>
+
+<p class="status-up">
+Operational
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row mt-3">
+
+<div class="col-md-4">
+
+<div class="card p-3">
+
+<h5>Notification Service</h5>
+
+<p class="status-up">
+Operational
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-3">
+
+<h5>Database Cluster</h5>
+
+<p class="status-up">
+Operational
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-3">
+
+<h5>Analytics Service</h5>
+
+<p class="status-down">
+Partial Outage
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3 class="mt-5">
+Incident History
+</h3>
+
+<div class="incident">
+
+<h5>Email Delivery Delay</h5>
+
+<p>
+Started: 15 June 2026
+</p>
+
+<p>
+Resolved after 2 hours.
+</p>
+
+</div>
+
+<div class="incident">
+
+<h5>Database Connection Failure</h5>
+
+<p>
+Started: 10 June 2026
+</p>
+
+<p>
+Resolved after maintenance.
+</p>
+
+</div>
+
+<h3 class="mt-5">
+Scheduled Maintenance
+</h3>
+
+<div class="maintenance">
+
+<h5>Payment Gateway Upgrade</h5>
+
+<p>
+Date: 30 June 2026
+</p>
+
+<p>
+Expected Downtime: 1 Hour
+</p>
+
+</div>
+
+<h3 class="mt-5">
+Uptime Statistics
+</h3>
+
+<table class="table table-bordered">
+
+<tr>
+<th>Service</th>
+<th>Uptime</th>
+</tr>
+
+<tr>
+<td>Authentication</td>
+<td>99.98%</td>
+</tr>
+
+<tr>
+<td>Payment Gateway</td>
+<td>99.75%</td>
+</tr>
+
+<tr>
+<td>Email Service</td>
+<td>99.92%</td>
+</tr>
+
+<tr>
+<td>Analytics Service</td>
+<td>98.50%</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
