@@ -1,0 +1,72 @@
+```html id="basicbox01"
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model Practical</title>
+
+    <style>
+
+        /* Div with height and width 100px */
+        #box1{
+            height:100px;
+            width:100px;
+            border:2px solid rgb(236, 16, 16);
+        }
+
+        /* Button */
+        button{
+            padding:10px 15px;
+            margin:100px;
+            border:2px solid rgb(96, 9, 9);
+        }
+
+        /* Box with content-box */
+        #box2{
+            width:100px;
+            height:100px;
+            padding:20px;
+            border:5px solid blue;
+            box-sizing:content-box;
+        }
+
+        /* Box with border-box */
+        #box3{
+            width:100px;
+            height:100px;
+            padding:20px;
+            border:5px solid green;
+            box-sizing:border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>100px Div</h2>
+
+    <div id="box1">
+        Box
+    </div>
+
+    <br><br>
+
+    <button>
+        Click Me
+    </button>
+
+    <h2>Box Sizing Example</h2>
+
+    <div id="box2">
+        Content Box
+    </div>
+
+    <br>
+
+    <div id="box3">
+        Border Box
+    </div>
+
+</body>
+</html>
+```

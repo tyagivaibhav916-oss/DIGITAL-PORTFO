@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Practice</title>
+    <style>
+        /* Task 1: Div with height and width 100px */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(180, 230, 173);
+            margin-bottom: 20px;
+        }
+
+        /* Task 2, 3, 4: Button */
+        .btn {
+            padding: 10px 15px; /* 10px top-bottom, 15px left-right */
+            margin: 100px;      /* 100px on all sides */
+            border: 2px solid red;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        /* Task 5: Box-sizing demonstration */
+        .content-box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            box-sizing: content-box;
+            background-color: lightgreen;
+            margin-bottom: 20px;
+        }
+
+        .border-box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            box-sizing: border-box;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>100px × 100px Div</h3>
+    <div class="box"></div>
+
+    <button class="btn">Click Me</button>
+
+    <h3>Box Sizing Example</h3>
+
+    <div class="content-box">
+        box-sizing: content-box
+    </div>
+
+    <div class="border-box">
+        box-sizing: border-box
+    </div>
+
+</body>
+</html>

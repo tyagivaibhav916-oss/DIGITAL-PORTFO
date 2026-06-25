@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InternConnect - Internship Application Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f7;
+    font-size: 18px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: #1f618d;
+    padding: 15px;
+}
+
+legend{
+    color: #1f618d;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+label{
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+#name,#email,#phone,#college,#date{
+    background-color: #ffffff;
+}
+
+input,select,textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #1f618d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+fieldset{
+    margin-bottom: 20px;
+    background-color: white;
+}
+</style>
+</head>
+
+<body>
+
+<h1>InternConnect - Internship Application Form</h1>
+
+<form method="post">
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label for="name">Full Name:</label>
+<input type="text" id="name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone"
+pattern="[0-9]{10}"
+placeholder="10 digit number"
+required>
+
+<label for="date">Date of Birth:</label>
+<input type="date" id="date">
+
+<label for="college">College Name:</label>
+<input type="text" id="college">
+
+</fieldset>
+
+<fieldset>
+<legend>Internship Details</legend>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+<br><br>
+
+<label for="role">Preferred Role:</label>
+<input list="roles" id="role">
+
+<datalist id="roles">
+<option value="Web Developer">
+<option value="AI Engineer">
+<option value="Data Analyst">
+<option value="Software Developer">
+</datalist>
+
+<label for="skill">Skill Level:</label>
+<input type="range" id="skill" min="1" max="10">
+
+<label for="department">Department:</label>
+<select id="department">
+<option>Computer Science</option>
+<option>Information Technology</option>
+<option>Electronics</option>
+<option>Mechanical</option>
+</select>
+
+<label for="about">Why do you want this internship?</label>
+<textarea id="about" rows="5"></textarea>
+
+</fieldset>
+
+<center>
+<button type="submit">Submit Application</button>
+</center>
+
+</form>
+
+</body>
+</html>

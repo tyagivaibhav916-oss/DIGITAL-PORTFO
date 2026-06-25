@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Footer Layout</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+        }
+
+        /* Header */
+        header{
+            background-color:#333;
+            color:white;
+            padding:15px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        /* Logo Div */
+        .logo{
+            width:80px;
+            height:80px;
+            background-color:green;
+            border-radius:50%;
+        }
+
+        /* Navigation Links */
+        .nav-links a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+        }
+
+        .nav-links a:hover{
+            color:yellow;
+        }
+
+        /* Container */
+        .container{
+            text-align:center;
+            padding:40px;
+        }
+
+        /* Three Divs */
+        .box{
+            width:100px;
+            height:100px;
+            display:inline-block;
+            margin:20px;
+            background-color:skyblue;
+            border:2px solid black;
+            line-height:100px;
+            font-weight:bold;
+        }
+
+        /* Footer */
+        footer{
+            background-color:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo"></div>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Container -->
+    <div class="container">
+        <div class="box">Div 1</div>
+        <div class="box">Div 2</div>
+        <div class="box">Div 3</div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 My Website | All Rights Reserved
+    </footer>
+
+</body>
+</html>

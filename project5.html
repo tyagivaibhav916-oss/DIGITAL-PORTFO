@@ -1,0 +1,174 @@
+[12:21, 10/06/2026] Vaibhav Tyagi: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Developer Portfolio</title>
+    <link rel="stylesheet" href="Project5Style.css">
+</head>
+<body>
+
+    <header id="my-name">
+        <h1>Vaibhav Tyagi</h1>
+        <p>Email: tyagivaibhav916@gmail.com</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Vaibhav Tyagi, a B.Tech CSE (AI) student at ABESIT Ghaziabad.
+            My goal is to become a successful engineer and develop innovative
+            software solutions.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>C Programming</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Technology</th>
+            </tr>
+
+            <tr>
+                <td>Personal Portfolio</td>
+                <td>HTML & CSS</td>
+            </tr>
+
+            <tr>
+                <td>Student Resume Website</td>
+                <td>HTML</td>
+            </tr>
+
+            <tr>
+                <td>Calculator</td>
+                <td>Python</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Demo Video</h2>
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/UB1O30fR-EE"
+            title="YouTube video"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <label>Name:</label><br>
+            <input type="text" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" required><br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="5" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Vaibhav Tyagi | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+#my-name {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill-list li {
+    margin: 8px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

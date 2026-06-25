@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:#111827;
+    color:white;
+}
+
+/* Sticky Navbar */
+.navbar{
+    position:sticky;
+    top:0;
+    background:#1f2937;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:30px;
+    color:#00ffff;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.nav-links a:hover{
+    color:cyan;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:15px 30px;
+    background:cyan;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:white;
+}
+
+/* Feature Grid */
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:#1f2937;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.big{
+    grid-column:span 2;
+}
+
+/* Footer */
+.footer{
+    display:flex;
+    justify-content:space-around;
+    background:#1f2937;
+    padding:30px;
+    margin-top:40px;
+}
+
+.col{
+    width:30%;
+}
+
+/* Breakpoint 1024px */
+@media(max-width:1024px){
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Breakpoint 600px */
+@media(max-width:600px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.features{
+    grid-template-columns:1fr;
+}
+
+.big{
+    grid-column:span 1;
+}
+
+.footer{
+    flex-direction:column;
+    text-align:center;
+}
+
+.col{
+    width:100%;
+    margin-bottom:20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo"></div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Responsive Landing Page</h1>
+    <p>Combine everything into one polished responsive page.</p>
+    <button>Get Started</button>
+</div>
+
+<!-- Feature Grid -->
+<div class="features">
+
+    <div class="card">
+        <h2>Sticky Navbar</h2>
+        <p>Flexbox with logo and links.</p>
+    </div>
+
+    <div class="card">
+        <h2>Hero Section</h2>
+        <p>Headline with button.</p>
+    </div>
+
+    <div class="card">
+        <h2>Feature Grid</h2>
+        <p>CSS Grid with cards.</p>
+    </div>
+
+    <div class="card big">
+        <h2>Breakpoints</h2>
+        <p>Media Queries at 600px and 1024px.</p>
+    </div>
+
+    <div class="card">
+        <h2>Polish</h2>
+        <p>Gap, Border Radius, Box Shadow and Hover Effects.</p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+
+    <div class="col">
+        <h3>About</h3>
+        <p>Responsive web design project.</p>
+    </div>
+
+    <div class="col">
+        <h3>Services</h3>
+        <p>HTML, CSS and Flexbox.</p>
+    </div>
+
+    <div class="col">
+        <h3>Contact</h3>
+        <p>Email: tyagivaibhav@gmail.com</p>
+        <p>Phone: +91 8445293150</p>
+    </div>
+
+</div>
+
+</body>
+</html>

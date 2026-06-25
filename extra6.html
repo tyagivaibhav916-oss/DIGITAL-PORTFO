@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourites</title>
+</head>
+<body>
+
+    <h1>My Favourites</h1>
+    <hr>
+
+    <!-- 1. <ul> with a nested sub-list (5 favourites, one with a <ul> inside its <li>) -->
+    <h2>Favourite Things</h2>
+    <ul>
+        <li>Coffee in the morning</li>
+        <li>Coding new projects</li>
+        <li>
+            Video games
+            <ul>
+                <li>RPG Games</li>
+                <li>Strategy Games</li>
+            </ul>
+        </li>
+        <li>Reading sci-fi novels</li>
+        <li>Weekend hikes</li>
+    </ul>
+
+    <hr>
+
+    <!-- 2 & 3. <ol> bookmarks with target and rel="noopener" on external links -->
+    <h2>Bookmarked Links</h2>
+    <ol>
+        <li>
+            <a href="https://www.bbc.com/news" target="_blank" rel="noopener">News Website</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">A Friend's Instagram</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener">Favorite YouTube Channel</a>
+        </li>
+        <li>
+            <a href="https://www.harvard.edu" target="_blank" rel="noopener">My College Site</a>
+        </li>
+    </ol>
+
+    <hr>
+
+    <!-- 4. A <figure> with <figcaption> (An image with a real caption) -->
+    <h2>Featured Image</h2>
+    <figure>
+        <img src="https://picsum.photos/500/300" alt="A beautiful scenic view">
+        <figcaption>A breathtaking view of the mountains during a serene sunset.</figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- 5. One <blockquote> (A quote you like, with attribution) -->
+    <h2>Inspirational Quote</h2>
+    <blockquote cite="https://www.brainyquote.com">
+        <p>"The only way to do great work is to love what you do."</p>
+        <cite>— Steve Jobs</cite>
+    </blockquote>
+
+    <hr>
+
+    <!-- 6. One YouTube <iframe> (Share -> Embed -> Paste) -->
+    <h2>Favourite Video</h2>
+    <!-- Replace the src URL with your specific YouTube embed link if needed -->
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox Properties</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background-color:rgb(211, 211, 211);
+}
+
+.container{
+display:flex;                 /* 1 */
+justify-content:space-between; /* 2 */
+align-items:center;            /* 3 */
+gap:20px;                      /* 4 */
+flex-wrap:wrap;                /* 6 */
+
+width:400%;
+height:800px;
+margin:auto;
+margin-top:50px;
+padding:20px;
+border:3px solid black;
+background-color:rgb(255, 255, 255);
+}
+
+.box{
+width:150px;
+height:100px;
+color:white;
+font-size:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box1{
+background-color:rgb(76, 0, 255);
+}
+
+.box2{
+background-color:rgb(255, 111, 0);
+flex-grow:1;                   /* 5 */
+}
+
+.box3{
+background-color:green;
+}
+
+.box4{
+background-color:rgb(255, 0, 72);
+}
+</style>
+
+</head>
+<body>
+
+<h1 align="center">Flexbox Properties Example</h1>
+
+<div class="container">
+
+<div class="box box1">Box 1</div>
+
+<div class="box box2">Box 2</div>
+
+<div class="box box3">Box 3</div>
+
+<div class="box box4">Box 4</div>
+
+</div>
+
+</body>
+</html>
